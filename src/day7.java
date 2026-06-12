@@ -16,7 +16,6 @@ public class day7{
         }
     }
     static class LeaveRequest extends Request {
-
         LeaveRequest(String name, String date, String reason) {
             super(name, date, reason);
         }
@@ -28,7 +27,6 @@ public class day7{
         }
     }
     static class OnDutyRequest extends Request {
-
         OnDutyRequest(String name, String date, String reason) {
             super(name, date, reason);
         }
