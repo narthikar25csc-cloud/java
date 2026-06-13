@@ -1,0 +1,102 @@
+public class day8 {
+/*
+    interface Employee {
+        String Name();
+
+        String id();
+
+        String Salary();
+    }
+
+    static class BankEmployee implements Employee {
+
+        @Override
+        public String Name() {
+            return "Narthika Raja";
+        }
+
+        @Override
+        public String id() {
+            return "1483";
+        }
+
+        @Override
+        public String Salary() {
+            return "50000";
+        }
+
+        public String solveprogram() {
+            System.out.println("solution");
+            return "solution";
+        }
+    }
+        static class CheckingEmployee implements Employee {
+
+            @Override
+            public String Name() {
+                return "Vveka Raja";
+            }
+
+            @Override
+            public String id() {
+                return "1603";
+            }
+
+            @Override
+            public String Salary() {
+                return "60000";
+            }
+
+            public String work() {
+                System.out.println("process");
+                return "process";
+            }
+        }
+
+        public static void main(String[] args) {
+            BankEmployee bank = new BankEmployee();
+            System.out.println("Name : " + bank.Name());
+            System.out.println("ID : " + bank.id());
+            System.out.println("Salary : " + bank.Salary());
+            bank.solveprogram();
+            System.out.println();
+            CheckingEmployee checking = new CheckingEmployee();
+            System.out.println("Name : " + checking.Name());
+            System.out.println("ID : " + checking.id());
+            System.out.println("Salary : " + checking.Salary());
+            checking.work();
+        }
+
+}
+*/
+
+/*record Courserecord(int course, int dept) {
+    }
+
+    static void main() {
+        Courserecord course = new Courserecord(123, 234);
+        System.out.println(course.course());
+        System.out.println(course.dept());
+    }
+}
+ */
+
+        enum LANGUAGE{
+            TA("Tamil"),
+            ENG("English"),
+            JP("Japanese"),
+            GR("German");
+
+            String description;
+
+            LANGUAGE(String description){
+                this.description = description;
+            }
+        }
+        static void main() {
+            System.out.println(LANGUAGE.TA.description);
+            System.out.println(LANGUAGE.GR.description);
+            System.out.println(LANGUAGE.JP.description);
+            System.out.println(LANGUAGE.ENG.description);
+        }
+    }
