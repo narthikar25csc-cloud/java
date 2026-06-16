@@ -1,4 +1,5 @@
- public class Day9 {
+/*
+public class Day9 {
         static class college implements AutoCloseable {
             college() {
                 System.out.println("college");
@@ -37,3 +38,4 @@
         }
     }
 }
+ */
