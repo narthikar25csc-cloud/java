@@ -1,3 +1,4 @@
+/*
 import java.util.ArrayList;
 public class day10 {
     static void main() {
@@ -17,6 +18,23 @@ public class day10 {
         System.out.println();
     }
 }
+ */
+import java.util.LinkedList;
+public class day10 {
+    static void main() {
+        LinkedList<String> queue = new LinkedList<String>();
+        queue.add("Sweatha");
+        queue.add("Menaga");
+        queue.add("Narthika");
+        queue.add("Mithra");
+        queue.add("Nivetha");
+        while(!queue.isEmpty()) {
+            process(queue);
+        }
+    }
+    static void process(LinkedList<String> queue){
+        String removed=queue.removeFirst();
+        System.out.println("Removed:"+removed);
 
-
-
+    }
+}
