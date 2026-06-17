@@ -72,20 +72,17 @@ public class Day10Linked {
 
         LinkedList<Student> students = new LinkedList<>();
 
-        // Add 5 Students
-        students.add(new Student("Arun", 101, 80));
-        students.add(new Student("Bala", 102, 75));
-        students.add(new Student("Charan", 103, 90));
-        students.add(new Student("Deepa", 104, 85));
-        students.add(new Student("Esha", 105, 88));
+        students.add(new Student("Nivetha", 101, 80));
+        students.add(new Student("viveka", 102, 75));
+        students.add(new Student("Narthi", 103, 90));
+        students.add(new Student("Subaa", 104, 85));
+        students.add(new Student("Dhivya", 105, 88));
 
-        // Remove 1 Student
         removeStudent(students);
 
-        // Update 1 Student
+Student Details;
         updateStudent(students);
 
-        // Display Students
         System.out.println("\nStudent Details");
         for (Student s : students) {
             System.out.println(
