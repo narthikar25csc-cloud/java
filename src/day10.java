@@ -62,7 +62,7 @@ public class Day10Linked {
 
     static void updateStudent(LinkedList<Student> students) {
         for (Student s : students) {
-            if (s.name.equals("Deepa")) {
+            if (s.name.equals("Narthi")) {
                 s.marks = 95; // Update marks from 85 to 95
             }
         }
@@ -72,9 +72,9 @@ public class Day10Linked {
 
         LinkedList<Student> students = new LinkedList<>();
 
-        students.add(new Student("Nivetha", 101, 80));
+        students.add(new Student("Narthi", 101, 80));
         students.add(new Student("viveka", 102, 75));
-        students.add(new Student("Narthi", 103, 90));
+        students.add(new Student("Nivetha", 103, 90));
         students.add(new Student("Subaa", 104, 85));
         students.add(new Student("Dhivya", 105, 88));
 
