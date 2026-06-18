@@ -23,10 +23,10 @@ import java.util.Map;
 public class day11 {
     public static void main(String[]args){
         Map<String,Integer> person = new HashMap<>();
-        person.put("Ram" , 89);
-        person.put("John" , 78);
-        person.put("Aravindh" , 67);
-        person.put("Ramesh" , 90);
+        person.put("Raja" , 89);
+        person.put("SriRam , 78);
+        person.put("SriDharan" , 67);
+        person.put("Raagul" , 90);
         System.out.println(person.get("Ram"));
         person.entrySet().forEach(entry ->{
             System.out.println(entry.getKey() + " : " + entry.getValue());
