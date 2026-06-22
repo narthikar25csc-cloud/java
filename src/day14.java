@@ -1,3 +1,4 @@
+/*
 public class day14{
 static class Student {
     String name;
@@ -45,5 +46,40 @@ static void main() {
 
 }
         }
+ */
+public class day14 {
+    interface Notification{
+        void sent(String to,String message);
+    }
+    class EmailNotification implements Notification{
+
+        @Override
+        public void sent(String to,String message){
+        System.out.println("Sending Email: "+message +", to "+to);
+    }
+}
+class WhatsappNotification implements Notification{
+
+    @Override
+    public void sent(String to,String message){
+        System.out.println("Sending Whatsapp: "+message +", to "+to);
+    }
+}
+static Notification getNotification(day14 factory, String type){
+    return switch (type){
+        case "Email"-> factory.new EmailNotification();
+        case "Whatsapp"-> factory.new WhatsappNotification();
+        default -> throw new IllegalArgumentException("Invalid notification type: "+type);
+    };
+}
+
+    static void main() {
+        day14 factory = new day14();
+
+        String type = "Whatsapp";
+        getNotification(factory, type).sent("4453543543", "Hello World");
+    }
+}
+
 
 
