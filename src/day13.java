@@ -28,6 +28,7 @@ public class Day13 {
 
 }
  */
+/*
 static void main(){
     Path path = Path.of("file","student.csv");
     try {
@@ -44,3 +45,5 @@ static void main(){
         io.printStackTrace();
     }
 }
+
+ */
