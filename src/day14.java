@@ -47,6 +47,7 @@ static void main() {
 }
         }
  */
+/*
 public class day14 {
     interface Notification{
         void sent(String to,String message);
@@ -80,6 +81,7 @@ static Notification getNotification(day14 factory, String type){
         getNotification(factory, type).sent("4453543543", "Hello World");
     }
 }
+ */
 
 
 
